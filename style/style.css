@@ -321,44 +321,112 @@ h4{
   width: 370px;
   text-align: right;
 }
+.bipad-banner .owl-carousel {
+  position: relative;
+}
 
+.bipad-banner .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
+.bipad-banner .owl-prev span {
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+}
 
-.nfc-board {
+.bipad-banner .owl-prev span::before {
+  content: url("../img/arrow.svg");
+}
+
+.bipad-banner .owl-next span {
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  right: 80px;
+}
+
+.bipad-banner .owl-next span::before {
+  content: url("../img/left.svg");
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.bipad-banner .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+}
+
+.bipad-banner .owl-dots .owl-dot {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  bottom: 0px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  z-index: 1;
+  margin-left: 5px;
+}
+
+.bipad-banner .owl-dots .active {
   background: #fff;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  bottom: 0px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  z-index: 1;
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+.bipad-board {
+  background: #ffffff;
   padding: 15px;
+  min-height: 115px;
   -webkit-box-shadow: 0 0px 15px #dedede;
           box-shadow: 0 0px 15px #dedede;
   margin-bottom: 15px;
 }
 
-.nfc-board img {
-  width: 72px;
-  height: 72px;
+.bipad-board img {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 2px solid #003870;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.nfc-board .col-sm-8 {
+.bipad-board .col-sm-8 {
   color: #003870;
   padding-top: 10px;
 }
 
-.nfc-board .col-sm-8 h5 {
+.bipad-board .col-sm-8 h5 {
   font-weight: 600;
   font-size: 16px;
 }
 
-.nfc-board .nfc-io {
+.bipad-board .bipad-io {
   background: #003870;
   color: #fff;
   padding: 10px;
   font-size: 16px;
 }
 
-.nfc-gallery .owl-nav .owl-prev span {
+.bipad-gallery .owl-nav .owl-prev span {
   font-size: 22px;
   background: #003870;
   width: 30px;
@@ -371,7 +439,7 @@ h4{
   left: -20px;
 }
 
-.nfc-gallery .owl-nav .owl-next span {
+.bipad-gallery .owl-nav .owl-next span {
   font-size: 22px;
   background: #003870;
   width: 30px;
@@ -384,7 +452,7 @@ h4{
   right: -20px;
 }
 
-.nfc-gallery__box {
+.bipad-gallery__box {
   background: #fff;
   min-height: 185px;
   width: 100%;
@@ -393,7 +461,7 @@ h4{
   padding: 15px;
 }
 
-.nfc-gallery__box i {
+.bipad-gallery__box i {
   background: #003870;
   width: 60px;
   height: 60px;
@@ -406,13 +474,13 @@ h4{
   margin-top: 50px;
 }
 
-.nfc-gallery__box h5 {
+.bipad-gallery__box h5 {
   padding-top: 15px;
   color: #003870;
   font-weight: 600;
 }
 
-.nfc-gallery__box h5::before {
+.bipad-gallery__box h5::before {
   content: "";
   width: 50px;
   height: 4px;
@@ -421,105 +489,105 @@ h4{
   top: 45px;
 }
 
-.nfc-gallery__box p {
+.bipad-gallery__box p {
   padding-top: 10px;
 }
 
-.nfc-glev table {
+.bipad-glev table {
   background: #fff;
   -webkit-box-shadow: 0 0px 15px #dedede;
           box-shadow: 0 0px 15px #dedede;
 }
 
-.nfc-glev table thead {
+.bipad-glev table thead {
   color: #ffffff;
   background: #003870;
 }
 
-.nfc-glev table thead th {
+.bipad-glev table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
   padding: 8px;
   font-size: 14px;
 }
 
-.nfc-glev table tbody th {
+.bipad-glev table tbody th {
   font-weight: 500;
 }
 
-.nfc-glev table tbody td {
+.bipad-glev table tbody td {
   vertical-align: middle;
   padding: 10px;
 }
 
-.nfc-event__list {
+.bipad-event__list {
   border-bottom: 1px solid #dedede;
   padding: 15px 0;
 }
 
-.nfc-event__list:nth-last-child(1) {
+.bipad-event__list:nth-last-child(1) {
   border-bottom: 0;
 }
 
-.nfc-event__list h6 {
+.bipad-event__list h6 {
   color: #003870;
   font-weight: 600;
 }
 
-.nfc-event__list span {
+.bipad-event__list span {
   color: #000;
 }
 
-.nfc-event__list span i {
+.bipad-event__list span i {
   color: #ff7272;
   padding-right: 5px;
 }
 
-.nfc-event__list p {
+.bipad-event__list p {
   color: #272424;
   padding-top: 5px;
 }
 
-.nfc-event__list img {
+.bipad-event__list img {
   width: 100%;
   height: 110px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.nfc-gl2 .nfc-gallery__box {
+.bipad-gl2 .bipad-gallery__box {
   min-height: 175px;
   margin-bottom: 15px;
 }
 
-.nfc-gl2 .nfc-gallery__box i {
+.bipad-gl2 .bipad-gallery__box i {
   position: absolute;
   left: -30px;
 }
 
-.nfc-gl2 .nfc-gallery__box p {
+.bipad-gl2 .bipad-gallery__box p {
   padding-left: 20px;
   margin-bottom: 5px;
 }
 
-.nfc-gl2 .nfc-gallery__box a {
+.bipad-gl2 .bipad-gallery__box a {
   padding-left: 20px;
   font-weight: 600;
   font-size: 14px;
 }
 
-.nfc-gl2 .social-feeds {
+.bipad-gl2 .social-feeds {
   background: #fff;
   padding: 15px;
   min-height: 555px;
 }
 
-.nfc-gl2 .owl-carousel .item {
+.bipad-gl2 .owl-carousel .item {
   position: relative;
   height: 555px;
 }
 
-.nfc-gl2 .owl-carousel .item:before {
+.bipad-gl2 .owl-carousel .item:before {
   content: "";
   width: 100%;
   height: 100%;
@@ -530,7 +598,7 @@ h4{
   left: 0;
 }
 
-.nfc-gl2 .owl-carousel .item figure-caption {
+.bipad-gl2 .owl-carousel .item figure-caption {
   position: absolute;
   color: #fff;
   left: 30%;
@@ -539,24 +607,24 @@ h4{
   width: 100%;
 }
 
-.nfc-gl2 .owl-carousel img {
+.bipad-gl2 .owl-carousel img {
   width: 100%;
   min-height: 555px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.nfc-gl2 .owl-carousel .owl-nav {
+.bipad-gl2 .owl-carousel .owl-nav {
   display: none;
 }
 
-.nfc-gl2 .owl-carousel .owl-dots {
+.bipad-gl2 .owl-carousel .owl-dots {
   position: relative;
   bottom: 50px;
   left: -20px;
 }
 
-.nfc-gl2 .owl-carousel .owl-dots .owl-dot {
+.bipad-gl2 .owl-carousel .owl-dots .owl-dot {
   width: 16px;
   height: 16px;
   position: relative;
@@ -567,7 +635,7 @@ h4{
   margin: 0 3px;
 }
 
-.nfc-gl2 .owl-carousel .owl-dots .active {
+.bipad-gl2 .owl-carousel .owl-dots .active {
   width: 16px;
   height: 16px;
   position: relative;
@@ -577,7 +645,7 @@ h4{
   background: #fff;
 }
 
-.nfc-events .nfc-event__list {
+.bipad-events .bipad-event__list {
   padding: 15px;
   background: #fff;
   margin-bottom: 15px;
@@ -586,14 +654,14 @@ h4{
   margin: 15px;
 }
 
-.nfc-events .nfc-event__list:hover {
+.bipad-events .bipad-event__list:hover {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
   -webkit-transition: .5s all;
   transition: .5s all;
 }
 
-.nfc-events .nfc-event__list img {
+.bipad-events .bipad-event__list img {
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -602,16 +670,16 @@ h4{
 
 
 
-.nfc-tab .nav-pills {
+.bipad-tab .nav-pills {
   background: #fff;
 }
 
-.nfc-tab .nav-pills .nav-link {
+.bipad-tab .nav-pills .nav-link {
   padding: 15px;
   position: relative;
 }
 
-.nfc-tab .nav-pills .nav-link::before {
+.bipad-tab .nav-pills .nav-link::before {
   content: '\f105';
   position: absolute;
   right: 15px;
@@ -621,48 +689,52 @@ h4{
   font-family: fontawesome;
 }
 
-.nfc-tab .nav-pills .active {
+.bipad-tab .nav-pills .active {
   background: #003870;
   border-radius: 0;
 }
 
-.nfc-tab .nav-pills .active::before {
+.bipad-tab .nav-pills .active::before {
   color: #fff;
 }
 
-.nfc-tab .tab-content {
+.bipad-tab .tab-content {
   background: #fff;
   padding: 25px;
   min-height: 400px;
 }
 
-.nfc-tab .tab-content h5 {
+.bipad-tab .tab-content h5 {
   color: #003870;
   font-weight: 500;
   padding-bottom: 5px;
 }
-.nfc-notice{
+.bipad-notice{
   width: 100%;
 }
-.nfc-notice__tabs {
-  background: #fff;
-  min-height: 400px;
+.bipad-notice__tabs {
+  background: #FAFAFA;
+  min-height: 300px;
   -webkit-box-shadow: 0 0 15px #dedede;
           box-shadow: 0 0 15px #dedede;
 }
 
-.nfc-notice .tab-content {
+.bipad-notice .tab-content {
   padding: 15px;
 }
 
-.nfc-notice .tab-content a {
+.bipad-notice .tab-content a {
   color: #272424;
   -webkit-transition: .5s all;
   transition: .5s all;
   display: block;
 }
+.bipad-notice .tab-content img{
+  width: 75px;
+  height: 75px;
+}
 
-.nfc-notice .tab-content a li {
+.bipad-notice .tab-content a li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,21 +742,22 @@ h4{
   padding: 20px 0;
 }
 
-.nfc-notice .tab-content a li p {
-  margin-bottom: 0;
+.bipad-notice .tab-content  li p {
+ font-size: 12px;
+ color: #a3a3a3;
 }
 
-.nfc-notice .tab-content a li i {
-  color: #f65757;
+.bipad-notice .tab-content a li i {
   padding-right: 10px;
 }
 
-.nfc-notice .tab-content a li span {
-  min-width: 130px;
+.bipad-notice .tab-content  li span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #003893;
 }
 
-.nfc-notice .tab-content a:hover {
-  color: #f65757;
+.bipad-notice .tab-content a:hover {
   -webkit-transition: .5s all;
   transition: .5s all;
   -webkit-transform: translateX(2px);
@@ -692,7 +765,7 @@ h4{
   display: block;
 }
 
-.nfc-notice .tab-content .new {
+.bipad-notice .tab-content .new {
   background: red;
   padding: 0px 10px;
   border-radius: 4px;
@@ -704,7 +777,7 @@ h4{
   font-size: 13px;
 }
 
-.nfc-notice h4 {
+.bipad-notice h4 {
   font-size: 20px;
   font-weight: 700;
   color: #003870;
@@ -712,7 +785,7 @@ h4{
   padding-top: 15px;
 }
 
-.nfc-notice h4::before {
+.bipad-notice h4::before {
   content: '';
   width: 70%;
   height: 2px;
@@ -722,20 +795,27 @@ h4{
   top: 25px;
 }
 
-.nfc-notice .col-sm-4 h4::before {
+.bipad-notice .col-sm-4 h4::before {
   width: 40%;
 }
 
-.nfc-notice .nav-link {
+.bipad-notice .nav-link {
   font-weight: 600;
   color: #272424;
   border: none;
   padding: 15px;
 }
 
-.nfc-notice .nav-tabs .nav-item.show .nav-link,
-.nfc-notice .nav-tabs .nav-link.active {
-  border-bottom: 3px solid #003870;
-  color: #003870;
+.bipad-notice .nav-tabs .nav-item.show .nav-link,
+.bipad-notice .nav-tabs .nav-link.active {
+  border-bottom: 5px solid red;
+  color: red;
   font-weight: 600;
+}
+.bipad-map-board{
+background: #fff;
+padding: 15px;
+-webkit-box-shadow: 0 0px 15px #dedede;
+        box-shadow: 0 0px 15px #dedede;
+margin-bottom: 15px;
 }
