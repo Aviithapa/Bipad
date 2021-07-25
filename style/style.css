@@ -834,16 +834,16 @@ margin-bottom: 15px;
 .common-update-toggle li  a:hover{
           background-color: #c0d7ff;
           transition: all .4s ease;
-    }
+}
 
-    .type-separator{
+.type-separator{
       padding-right: 60px;
       margin-right: 60px;
       border-right: 1px solid #d4d4d4;
-    }
+}
     .common-update-toggle    .image-container{
-      height: 65px;
-      width: 65px;
+      height: 40px;
+      width: 40px;
       border-radius: 100%;
       background-color: #eaf1fd;
       margin: auto;
@@ -854,30 +854,24 @@ margin-bottom: 15px;
      
     }
     .common-update-toggle img{
-      height: 32px;
+      height: 30px;
       max-width: 100%;
       filter: invert(48%) sepia(65%) saturate(2373%) hue-rotate(-160deg) brightness(99%) contrast(137%);
     }
     .common-update-toggle img .text-container{
       margin-top: 15px;
-      color: ;
       text-align: center;
       
     }
-    .common-update-toggle img .text-container h5{
-      font-size: 14px;
-    }
-
-
-
-    .portal-section .portal-container{
-        display: flex;
-        flex-wrap: wrap;
-        margin: -3px;
-    }
+    .portal-container{
+       width: 100%;
+      
+       padding-left: 25px;
+      }
     .portal-container   .portal-item{
-          width: 20%;
+          width: 16%;
           padding: 3px;
+          float: left;
     }
     .portal-container   .portal-item      .inner{
             box-shadow: 0 0 30px #e8e8e8;
@@ -892,22 +886,20 @@ margin-bottom: 15px;
     }
              
     .portal-container   .portal-item      .inner         .fa{
-                font-size: 30px;
+                font-size: 16px;
               }
 
-    .portal-container   .portal-item      .inner         .image-container img{
-                
+    .portal-container   .portal-item      .inner         .image-container img{ 
                   height: 32px;
-                  /*filter: invert(1);*/
-
-              }
+                }
 
               .portal-container   .portal-item .text-container{
                 margin-top: 12px;
               }
-                .portal-container   .portal-item  h4,h5{
+                   .portal-item  .text-container h5{
                   color: black;
                   font-weight: bold;
+                  font-size: 16px !important;
                 }
 
 
@@ -1242,4 +1234,18 @@ margin-bottom: 15px;
       font-size: 17px;
       border: none;
       cursor: pointer;
+    }
+    .photoHeader{
+     text-align: center;
+    }
+
+    .photoHeader h3{
+      color: #003894;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    hr{
+      border: 5px solid red;
+      border-radius: 3px;
     }
